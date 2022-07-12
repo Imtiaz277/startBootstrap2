@@ -1,0 +1,30 @@
+textarea.form-input{ height: 100%; }
+
+.form-input{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    //By default, browser will give their own font-family and color to input text, email, etc.
+    //So, you have to specify what font-family and color you want.
+    font-family: inherit;
+    color: inherit;
+    padding: $small;
+    border-radius: $border-radius-small;
+    border: none;
+    border-bottom: 0.3rem solid transparent;
+    resize: none;
+    transition: all 0.3s;
+
+    &:not(:last-child){ margin-bottom: $small; }
+    
+    @include respond(phone){ padding: 3rem; }
+
+    //Focus means the user click on the input element.
+    &:focus{
+        outline: none;
+        border-bottom: 0.3rem solid $color-success;
+    }
+    
+    &:focus:invalid{ border-bottom: 0.3rem solid $color-invalid; }
+    &::-webkit-input-placeholder{ color: $color-grey-3; }
+}

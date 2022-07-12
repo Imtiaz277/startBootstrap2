@@ -1,0 +1,167 @@
+.navigation{
+    width: 100%;
+    background-color: $color-secondary;
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 20rem;
+    }
+
+    &__icon-container{
+        width: 4rem;
+        height: 3rem;
+        position: relative;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: 0.2rem solid transparent;
+        outline-offset: 0.5rem;
+        border-radius: $border-radius-small;
+        transition: outline 0.3s;
+
+        &:focus, &:active{
+            outline: 0.2rem solid $color-white;
+        }
+    }
+
+    &__icon{
+        width: 100%;
+        @include absCenter;
+
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        &, &::before, &::after{
+            height: 0.3rem;
+            background-color: $color-white;
+            transition: transform 0.3s;
+        }
+
+        &::before{
+            transform: translateY(-300%);
+        }
+
+        &::after{
+            transform: translateY(300%);
+        }
+
+    }
+
+    &__sidebar-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        transition: visibility 0s 0.3s, background-color 0.3s;
+    }
+
+    &__sidebar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        width: 30%;
+        height: 100vh;
+        background-color: rgba($color-secondary, 1);
+        transform: translateX(110%);
+        z-index: 20;
+        transition: transform 0.5s cubic-bezier(.19,.81,1,1);
+        @include respond(tab-land){ width: 50%; }
+        @include respond(tab-port){ width: 100%; }
+    }
+
+    &__close-sidebar-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+        color: $color-white;
+        background-color: transparent;
+        border: none;
+        outline: 0.2rem solid transparent;
+        outline-offset: 0.5rem;
+        border-radius: $border-radius-small;
+        transition: all 0.3s;
+
+        &:focus, &:active{
+            outline: 0.2rem solid $color-white;
+        }
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    &__lists{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    &__item{
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        a{
+            color: $color-white;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        a::before{
+            content: "";
+            background-color: $color-primary;
+            width: 100%;
+            height: 0.2rem;
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        a:hover{
+            color: $color-primary;
+        }
+
+        a:hover::before{
+            transform: scaleX(1);
+        }
+    }
+
+    &__sidebar-overlay.show-overlay{
+        background-color: rgba(0, 0, 0, 0.7);
+        visibility: visible;
+        transition: visibility 0s, background-color 0.3s;
+    }
+
+    &__sidebar.show-sidebar{
+        transform: translateX(0);
+    }
+
+}

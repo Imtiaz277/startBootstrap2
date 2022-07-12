@@ -1,0 +1,10 @@
+.portfolio, .teams{
+    background-color: $color-grey-4;
+}
+
+.contact{
+    width: 100%;
+    background-image: url(img/map-image.png), linear-gradient($color-secondary, $color-secondary);
+    background-size: cover;
+    background-position: center;
+}

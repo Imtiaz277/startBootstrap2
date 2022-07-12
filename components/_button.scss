@@ -1,0 +1,20 @@
+.btn{
+    cursor: pointer;
+    border: none;
+    border-radius: $border-radius-small;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2rem 2.5rem;
+    transition: background-color 0.3s;
+    
+    &--yellow{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &:hover{
+            background-color: $color-primary-hover;
+        }
+
+    }
+}

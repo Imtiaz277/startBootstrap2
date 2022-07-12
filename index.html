@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Bootstrap 2</title>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesmome -->
+    <script src="https://kit.fontawesome.com/eb8b3cd471.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navigation">
+
+        <div class="container">
+            <div class="navigation__content">
+                <a href="#header"><img class="navigation__logo" src="img/navbar-logo.svg" alt="Navigation Logo"></a>
+                
+                <button class="navigation__icon-container" id="btn-open-sidebar">
+                    <span class="navigation__icon">&nbsp;</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="navigation__sidebar-overlay" id="sidebar-overlay">&nbsp;</div>
+        <div class="navigation__sidebar" id="sidebar">
+            <button class="navigation__close-sidebar-btn" id="btn-close-sidebar"><i class="fa-solid fa-xmark"></i></button>
+            <a href="#header"><img class="navigation__logo" src="img/navbar-logo.svg" alt="Navigation Logo"></a>
+            <ul class="navigation__lists">
+                <li class="navigation__item"><a href="#services">Services</a></li>
+                <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="navigation__item"><a href="#about">About</a></li>
+                <li class="navigation__item"><a href="#teams">Team</a></li>
+                <li class="navigation__item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Header Section -->
+    <header id="header" class="header">
+        <div class="header__text-container">
+            <h2 class="heading__secondary heading--white heading--capitalized heading--italized" data-aos="zoom-in">Welcome To Our Studio!</h2>
+            <h1 class="heading__primary heading--white heading--uppercase" data-aos="zoom-in" data-aos-delay="1000">It's Nice To Meet You</h1>
+            <div data-aos="zoom-in-up" data-aos-delay="2000">
+                <button class="btn btn--yellow u-margin-top-medium">Tell Me More</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Services Section -->
+        <section id="services" class="services u-padding-y-big">
+            <div class="container">
+                
+                <div class="u-center-text u-margin-bottom-big">
+                    <h3 class="heading__tertiary heading--uppercase">Services</h3>
+                    <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                </div>
+
+                <div class="row row--space-between">
+
+                    <div data-aos="fade-right" class="col-1-3">
+                        <div class="icon-container icon-container--large icon-container--yellow u-margin-x-auto u-margin-bottom-small">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h5 class="heading__quinary heading--capitalized u-center-text">E-Commerce</h5>
+                        <p class="text text--justify text--hyphened">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim corporis magni corrupti, sed voluptatum quibusdam laboriosam accusamus non voluptatibus distinctio aperiam explicabo vel! Praesentium dignissimos quidem dolore, quam beatae magni?</p>
+                    </div>
+
+                    <div data-aos="zoom-in" class="col-1-3">
+                        <div class="icon-container icon-container--large icon-container--yellow u-margin-x-auto u-margin-bottom-small">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h5 class="heading__quinary heading--capitalized u-center-text">Responsive Design</h5>
+                        <p class="text text--justify text--hyphened">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim corporis magni corrupti, sed voluptatum quibusdam laboriosam accusamus non voluptatibus distinctio aperiam explicabo vel! Praesentium dignissimos quidem dolore, quam beatae magni?</p>
+                    </div>
+
+                    <div data-aos="fade-left" class="col-1-3">
+                        <div class="icon-container icon-container--large icon-container--yellow u-margin-x-auto u-margin-bottom-small">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h5 class="heading__quinary heading--capitalized u-center-text">Web Security</h5>
+                        <p class="text text--justify text--hyphened">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim corporis magni corrupti, sed voluptatum quibusdam laboriosam accusamus non voluptatibus distinctio aperiam explicabo vel! Praesentium dignissimos quidem dolore, quam beatae magni?</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio u-padding-y-big">
+            <div class="container">
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h3 class="heading__tertiary heading--uppercase">Services</h3>
+                    <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                </div>
+    
+                <div class="row row--space-between">
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--1">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Threads</h3>
+                                <h4 class="heading__quaternary heading--italized">Illustration</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--2">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Explore</h3>
+                                <h4 class="heading__quaternary heading--italized">Graphic Design</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--3">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Finish</h3>
+                                <h4 class="heading__quaternary heading--italized">Identity</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--space-between u-margin-top-big">
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--4">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Lines</h3>
+                                <h4 class="heading__quaternary heading--italized">Branding</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--5">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Southwest</h3>
+                                <h4 class="heading__quaternary heading--italized">Website Design</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-1-3" data-aos="zoom-in-up">
+                        <div class="card">
+                            <div class="card__image card__image--6">
+                                <div class="card__image-overlay"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="card__body u-padding-y-small u-center-text">
+                                <h3 class="heading__senary">Window</h3>
+                                <h4 class="heading__quaternary heading--italized">Photography</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal" id="modal-overlay">
+        
+            <div class="modal__container" id="modal-container">
+                
+                <div class="modal__thumbnail">
+                    <img src="img/portfolio-1.jpg" class="modal__image" id="modal-image" alt="Img 1">
+                </div>
+                
+                <div class="modal__content">
+                    
+                    <div class="modal__title">
+                        <h3 class="heading__tertiary heading--uppercase">Project Name</h3>
+                        <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                    </div>
+
+                    <div class="modal__description">
+                        <p class="text text--justify text--hyphened">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptas delectus est possimus officia, ab cupiditate cum. Fugiat perferendis modi, fuga repellat totam, laboriosam libero eligendi maxime aut neque odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias dignissimos laborum officiis incidunt consectetur quos hic est! Reprehenderit perspiciatis ea expedita eum aut fugiat quisquam repellendus dolor necessitatibus voluptatibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque adipisci delectus nostrum aperiam corrupti est deserunt consectetur architecto minima mollitia quaerat eaque, laboriosam qui nulla, recusandae vel facilis earum odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt magni animi! Quia cum incidunt a itaque perferendis labore praesentium hic dolorem veritatis commodi ab, possimus culpa veniam neque pariatur.</p>
+                    </div>
+
+                    <div class="modal__about">
+                        <p class="text">
+                            <span class="text--bold">Client: </span class="text--bold">
+                            <span id="modal-client">ZSJL</span>
+                        </p>
+                        <p class="text">
+                            <span class="text--bold">Category: </span class="text--bold">
+                            <span id="modal-category">Illustration</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="modal__close-btn" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about u-padding-y-big">
+            <div class="container">
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h3 class="heading__tertiary heading--uppercase">ABOUT</h3>
+                    <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                </div>
+
+                <div class="about__container">
+                    <div class="about__row" data-aos="fade-right">
+
+                        <div class="about__description">
+                            <h3 class="heading__senary">2009-2011</h3>
+                            <h3 class="heading__senary">Our Humble Beginnings</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+
+                        <div class="about__image">
+                            <img src="img/about-1.jpg" alt="about 1 img">
+                        </div>
+
+                        <div class="about__empty">&nbsp;</div>
+
+                    </div>
+
+                    <div class="about__row u-margin-top-huge" data-aos="fade-right">
+
+                        <div class="about__description">
+                            <h3 class="heading__senary">March 2011</h3>
+                            <h3 class="heading__senary">OAn Agency is Born</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+
+                        <div class="about__image">
+                            <img src="img/about-2.jpg" alt="about 2 img">
+                        </div>
+
+                        <div class="about__empty">&nbsp;</div>
+                        
+                    </div>
+
+                    <div class="about__row u-margin-top-huge" data-aos="fade-right">
+
+                        <div class="about__description">
+                            <h3 class="heading__senary">December 2015</h3>
+                            <h3 class="heading__senary">Transition to Full Service</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+
+                        <div class="about__image">
+                            <img src="img/about-3.jpg" alt="about 3 img">
+                        </div>
+
+                        <div class="about__empty">&nbsp;</div>
+                        
+                    </div>
+
+                    <div class="about__row u-margin-top-huge" data-aos="fade-right">
+
+                        <div class="about__description">
+                            <h3 class="heading__senary">July 2020</h3>
+                            <h3 class="heading__senary">Phase Two Expansion</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+
+                        <div class="about__image">
+                            <img src="img/about-4.jpg" alt="about 4 img">
+                        </div>
+
+                        <div class="about__empty">&nbsp;</div>
+                        
+                    </div>
+
+                    <div class="about__row u-margin-top-huge" data-aos="fade-up">
+
+                        <div class="about__empty">&nbsp;</div>
+
+                        <div class="about__footer">
+                            <p>Be Part Of Our Story!</p>
+                        </div>
+
+                        <div class="about__empty">&nbsp;</div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="teams" class="teams u-padding-y-big">
+            <div class="container">
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h3 class="heading__tertiary heading--uppercase">Team</h3>
+                    <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                </div>
+
+                <div class="row row--space-between u-margin-bottom-big">
+
+                    <div class="col-1-3" data-aos="fade-up">
+                        <div class="team">
+                            <img class="team__image u-margin-bottom-medium" src="img/1.jpg" alt="image 1">
+                            <div class="u-center-text u-margin-bottom-medium">
+                                <h3 class="heading__senary heading--light">Parveen Anand</h3>
+                                <p class="text">Lead Designer</p>
+                            </div>
+                            <div class="u-d-flex u-flex-jc-center">
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black u-margin-x-small">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1-3" data-aos="fade-up">
+                        <div class="team">
+                            <img  class="team__image u-margin-bottom-medium" src="img/2.jpg" alt="image 2">
+                            <div class="u-center-text u-margin-bottom-medium">
+                                <h3 class="heading__senary heading--light">Diana Petersen</h3>
+                                <p class="text">Lead Marketer</p>
+                            </div>
+                            <div class="u-d-flex u-flex-jc-center">
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black u-margin-x-small">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-3" data-aos="fade-up">
+                        <div class="team">
+                            <img  class="team__image u-margin-bottom-medium" src="img/3.jpg" alt="image 3">
+                            <div class="u-center-text u-margin-bottom-medium">
+                                <h3 class="heading__senary heading--light">Larry Parker</h3>
+                                <p class="text">Lead Developer</p>
+                            </div>
+                            <div class="u-d-flex u-flex-jc-center">
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black u-margin-x-small">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="icon-container icon-container--small icon-container--black">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="u-center-text u-margin-bottom-big" data-aos="zoom-in">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Companies Section -->
+        <section id="companies" class="companies u-padding-y-big">
+            <div class="container">
+
+                <div class="row row--space-between row--align-center" data-aos="fade-right">
+                    <div class="col-1-4">
+                        <img src="img/facebook.svg" alt="facebook" class="companies__company-logo">
+                    </div>
+
+                    <div class="col-1-4">
+                        <img src="img/google.svg" alt="google" class="companies__company-logo">
+                    </div>
+                    
+                    <div class="col-1-4">
+                        <img src="img/microsoft.svg" alt="microsoft" class="companies__company-logo">
+                    </div>
+
+                    <div class="col-1-4">
+                        <img src="img/ibm.svg" alt="ibm" class="companies__company-logo">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact u-padding-y-big">
+            <div class="container">
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h3 class="heading__tertiary heading--uppercase heading--white">Contact Us</h3>
+                    <h4 class="heading__quaternary heading--italized">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                </div>
+
+                <form>
+                    <div class="row row--space-between" data-aos="zoom-in-up">
+                        <div class="col-1-2">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                            <input type="tel"placeholder="Your Phone Number" class="form-input" required>
+                        </div>
+    
+                        <div class="col-1-2">
+                            <textarea placeholder="Your Message" class="form-input" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="u-center-text" data-aos="zoom-in-up">
+                        <button class="btn btn--yellow u-margin-top-big">Tell Me More</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer u-padding-y-big">
+        <div class="container">
+
+            <div class="row row--space-between row--align-center" data-aos="fade-left">
+
+                <div class="col-1-3">
+                    <p class="footer-text u-center-text">Copyright © Your Website 2022</p>
+                </div>
+
+                <div class="col-1-3">
+                    <div class="u-d-flex u-flex-jc-center">
+                        <div class="icon-container icon-container--small icon-container--black">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icon-container icon-container--small icon-container--black u-margin-x-small">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon-container icon-container--small icon-container--black">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-3">
+                    <div class="u-center-text">
+                        <a href="#" class="footer-link u-margin-right-small">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms Of Use</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    <!-- AOS JavaScript-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

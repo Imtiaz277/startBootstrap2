@@ -1,0 +1,46 @@
+.icon-container{
+    border-radius: 50%;
+    position: relative;
+
+    &--large{
+        width: 12rem;
+        height: 12rem;
+
+        i{
+            @include absCenter;
+            font-size: 6rem;
+         }
+    }
+
+    &--small{
+        width: 5rem;
+        height: 5rem;
+
+        i{
+            @include absCenter;
+            font-size: 2.5rem;
+         }
+    }
+
+    &--yellow{
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &--black{
+        cursor: pointer;
+        background-color: $color-secondary;
+        color: $color-white;
+        border-width: 0.4rem;
+        border-style: solid;
+        border-color: transparent;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: $color-white;
+            color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+
+}

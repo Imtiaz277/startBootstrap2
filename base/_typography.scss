@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+
+    &__primary{
+        text-transform: uppercase;
+        font-size: 6.5rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+    }
+    
+    &__secondary{
+        text-transform: capitalize;
+        font-family: 'Roboto Slab', serif;
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    &__tertiary{
+        text-transform: uppercase;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        color: $color-secondary;
+    }
+
+    &__quaternary{
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        color: $color-grey-3;
+    }
+
+    &__quinary{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        color: $color-secondary;
+    }
+
+    &__senary{
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        color: $color-secondary;
+    }
+
+    &--italized{
+        font-style: italic;
+    }
+
+    &--white{
+        color: $color-white;
+    }
+
+    &--captalized{
+        text-transform: capitalize;
+    }
+
+    &--uppercase{
+        text-transform: uppercase;
+    }
+
+    &--light{
+        font-weight: 400;
+    }
+
+}
+
+.text{
+    color: $color-grey-3;
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.8;
+
+    &--justify{
+        text-align: justify;
+    }
+
+    &--hyphened{
+        -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
+    }
+
+    &--bold{
+        font-weight: 800;
+    }
+
+}
+
+.footer-text, .footer-link{
+    color: $color-grey-3;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}

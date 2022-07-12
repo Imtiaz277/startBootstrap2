@@ -1,0 +1,13 @@
+.team{
+
+    &__image{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: $border-grey;
+        @include respond(tab-land){ width: 50%; }
+        @include respond(phone){ width: 60%; }
+    }
+}
